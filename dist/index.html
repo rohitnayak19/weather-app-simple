@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+  <div class="h-screen bg-gradient-to-br from-blue-500 to-indigo-600 flex justify-center items-center">
+    <div class="h-auto w-96 bg-white p-4 rounded-lg shadow-lg">
+      <h1 class="text-2xl text-gray-800 font-bold mb-4 text-center">Weather App</h1>
+      <div class="flex gap-2 mb-6">
+        <input type="text" name="search" id="searchInput" placeholder="Enter city name..."
+          class="bg-gray-100 w-full p-3 rounded-md outline-none text-gray-700 shadow-sm">
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md shadow-md font-semibold transition-colors"
+          id="btn">
+          Search
+        </button>
+      </div>
+      <div class="weather-info text-center space-y-4">
+        <h2 id="city-name" class="text-gray-800 text-xl font-medium"></h2>
+        <p id="temperature" class="text-lg text-blue-500 font-semibold"></p>
+        <p id="description" class="text-gray-600 italic"></p>
+        <p id="humidity" class="text-gray-700"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
